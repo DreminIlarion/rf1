@@ -26,8 +26,8 @@ const RegistrationForm = () => {
       // Формирование URL и данных для отправки
       const url =
           categreg === 'register'
-              ? 'https://registration-fastapi.onrender.com/registration'
-              : 'https://registration-fastapi.onrender.com/login';
+              ? '/registration'
+              : '/login';
   
       const data =
           categreg === 'register'
