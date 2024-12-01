@@ -1,0 +1,201 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #000000;
+  background: url('https://avatars.mds.yandex.net/i?id=f6258e27fb49de00325f1c2ce9f921c7_l-5531667-images-thumbs&n=13') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #e2e2e2af;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: rgb(95,95,191);
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgba(95,95,191,0.008841036414565795) 0%, rgba(255,255,255,1) 0%, rgba(250,250,250,0.9444152661064426) 42%, rgba(205,205,205,1) 100%);
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #3d3d3d;
+  font-family:Verdana, sans-serif;
+  font-size: 125%;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  color: #000000;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.input-group.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.label {
+  margin-bottom: 5px;
+
+}
+
+.inputt {
+  background-color: #ecebeb;
+
+}
+.input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+}
+
+
+.error-message {
+  color: red;
+  margin-top: 5px;
+}
+.button-group{
+    display: flex;
+    gap: 45px; /* Отступ между кнопками */
+    margin: auto;
+}
+
+.buttonreg-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 400px; /* Максимальная ширина формы */
+}
+
+.buttonreg-group span {
+  cursor: pointer;
+  display: inline-flex; /* Используйте flex для выравнивания содержимого */
+  justify-content: center; /* Центрирование текста по горизонтали */
+  align-items: center; /* Центрирование текста по вертикали */
+  padding: 0; /* Уберите внутренние отступы */
+  background-color: #ffffff;
+  color: #333;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-sizing: border-box; /* Включите border-box для точного расчета размеров */
+  position: relative;
+  z-index: 1; /* Обеспечивает правильное наложение */
+}
+
+.buttonreg-group .active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Размеры для обеих кнопок */
+.register-label,
+.login-label {
+  width: 200px; /* 50% минус небольшие отступы для аккуратной центровки */
+  height: 40px;
+}
+
+.category-label {
+  cursor: pointer;
+  display: block;
+  float: left;
+  text-align: center;
+  line-height: 38px; /* Центрирование текста по вертикали */
+  width: 50%; /* Каждая половина занимает половину ширины */
+  z-index: 1; /* Помещаем метки поверх радиокнопок */
+  transition: all 0.3s ease;
+}
+
+.register-label {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border: 0.1px solid #ccc;
+  border-right: none;
+}
+
+.login-label {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: 0.1px solid #ccc;
+  border-left: none;
+  margin-left: -1px; /* Устраняем возможный пробел между метками */
+}
+
+/*.category-label.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.category-label input[type="radio"] {
+  -webkit-appearance: none; /* Для Chrome, Safari и других WebKit-браузеров 
+  -moz-appearance: none; /* Для Firefox 
+  appearance: none; /* Для современных браузеров 
+  display: none !important; /* Полностью скрываем радио-кнопк 
+  visibility: hidden !important; /* Гарантированное сокрытие 
+  opacity: 0 !important; /* Прозрачность на ноль 
+  position: absolute !important; /* Абсолютное позиционирование 
+  z-index: -9999 !important; /* Отправляем за пределы видимости 
+  width: 0 !important; /* Минимизируем ширину 
+  height: 0 !important; /* Минимизируем высоту 
+  margin: 0 !important; /* Убираем все отступы 
+  padding: 0 !important; /* Убираем все внутренние отступы 
+  border: none !important; /* Убираем границы 
+}
+
+/* Создаем фоновый слой для меток 
+.category-label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white; /* Цвет фона меток 
+  z-index: -1; /* Размещаем под меткой 
+}*/
+
+.status-button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s;}
+
+  .staus-button:hover {
+    background-color: #e0e0e0;}
+
+
+.status-button.active {
+    background-color: #007bff; 
+    color: white; 
+}
+
+.category-button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+  }
+
+
+.category-button:hover {
+    background-color: #e0e0e0;}
+
+
+.category-button.active {
+    background-color: #007bff; 
+    color: white; 
+}
